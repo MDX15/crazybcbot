@@ -66,8 +66,8 @@ client.on('ready',  () => {
   client.on('message', message => {
     if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('m!adminbc')){
-if(!message.author.id === '476185102922285066') return;
+if (message.content.startsWith('.adminbc')){
+if(!message.author.id === '425018693999919104') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -93,7 +93,7 @@ m.sendMessage(args)
   
   
   client.on("message", message => {
-    if (message.content === "m!help") {
+    if (message.content === ".help") {
      const embed = new Discord.RichEmbed() 
          .setColor("#00FF00")
          .setThumbnail(message.author.avatarURL)
